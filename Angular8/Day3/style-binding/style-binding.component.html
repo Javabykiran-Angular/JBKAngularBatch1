@@ -1,0 +1,16 @@
+<p>style-binding works!</p>
+
+<h1 style="color: blue;">Traditional Style Binding</h1>
+
+<h1 [style.color]="mycolor" >Style Binding In angular</h1>
+
+<h1 [style.color]="rating<4?'blue':'red'" > Apply Condition for style Binding</h1>
+
+<h1 [style.color]="rating<4?mycolor2:mycolor" > Apply Condition for style Binding</h1>
+
+<!-- ngStyle -->
+<p [ngStyle]="myobj"> Apply style Binding  </p>
+<hr>
+<div [style.background]="divcolor">
+
+</div>

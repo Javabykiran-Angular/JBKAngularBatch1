@@ -1,0 +1,22 @@
+<p>property-binding works!</p>
+
+<input type="text" [value]="name" placeholder="Enter the Name">
+<br><br>
+<img [src]="imgurl" alt="" style="width: 200px; height: 200px;">
+<br><br>
+
+<div>
+    Dispaly data 
+</div> <br><br>
+
+<div [hidden]="ishidden">
+    Dispaly data using property Binding
+</div>
+<br><br>
+
+<div hidden="{{ishidden1}}">
+    Dispaly data using String Interpolation
+</div><br><br>
+
+<button [hidden]="ishidden2">Submit Data</button>
+
