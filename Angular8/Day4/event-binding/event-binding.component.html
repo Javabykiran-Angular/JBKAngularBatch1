@@ -1,0 +1,27 @@
+<p>event-binding works!</p>
+
+<button (click)="onclick()">Click Me</button>
+<br><br>
+<input type="text" [value]="strname">
+
+<h1> {{strname}} </h1>
+
+<!-- $event-It is special variable provided by Angular It gives  the information of your current dom element that information is in the object form -->
+
+<button (click)="onclick2($event)" value="Click Me Thank You ">Use of $Event</button >
+
+<!-- template Reference variable -->
+<br><br> 
+<input type="text" placeholder="Enter the name" #myinput  >
+<br><br> 
+<!-- <button (click)="onClick3(myinput.value)">Submit</button><br><br>  -->
+
+<button (click)="onClick3(myinput)">Submit</button><br><br> 
+
+<input type="text" placeholder="Resultant Output" [value]="strname2">
+<br><br><br>
+
+<input type="text" placeholder="Enter the Name....." (change)="onChangeEvent()" [style.background]="bgcolor"
+(focus)="onFocus()"
+>
+

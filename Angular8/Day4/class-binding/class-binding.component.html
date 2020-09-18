@@ -1,0 +1,16 @@
+<p>class-binding works!</p>
+
+<h1 class="success">Simple Use of Class</h1>
+<hr>
+
+<h1 [class]="myclass"> Simple Class Binding Using Angular </h1>
+
+<h1 [class.warning]="rating<4" 
+[class.danger]="rating>4" > Apply Condition </h1>
+
+<h1 [class]="rating<4?myclass1:myclass2"> Apply Conditional Styling </h1>
+<hr>
+<!-- Apply Directive ngClass it takes a object -->
+
+<h1 [ngClass]="myobj"> Apply ngClass Directive </h1>
+
