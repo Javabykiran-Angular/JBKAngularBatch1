@@ -1,0 +1,64 @@
+<p>for-directive works!</p>
+
+<!-- <ul>
+    <li *ngFor="let item of course">  {{item}} </li>    
+</ul> <br>
+
+<ul>
+    <li *ngFor="let item of course;index as i "> 
+        <h1 *ngIf="i==2">
+            {{i}} {{item}}
+        </h1>
+        
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of [10,20,30,40,50];index as i ">       
+            {{i}} {{item}}   
+        
+    </li>
+</ul>
+
+<ul >
+    <li *ngFor="let item of course;first as f"> {{f}} {{item}} </li>
+</ul>
+
+<ul >
+    <li *ngFor="let item of course;last as l"> {{l}} {{item}} </li>
+</ul>
+
+<ul >
+    <li *ngFor="let item of course;even as e">
+         {{e}} {{item}} </li>
+</ul>
+
+<ul >
+    <li *ngFor="let item of course;odd as o">
+         {{o}} {{item}} </li>
+</ul> -->
+
+<hr>
+<hr>
+<input type="text" placeholder="Enter the First Name.." #fname> <br><br>
+<input type="text" placeholder="Enter the Last Name.." #lnmae> <br><br>
+<input type="number" placeholder="Enter the Salary.." #salary> <br><br>
+
+<button (click)="AddEmp(fname.value,lnmae.value,salary.value)">ADD</button>
+
+<ul>
+    <li *ngFor="let item of empdetail;index as i">
+        {{i+1}}&nbsp; {{item.Fname}} &nbsp; {{item.Lname}}  &nbsp; {{item.Salary}} &nbsp; <button (click)="RemoveEmployee(item,i)">Remove</button>
+
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+

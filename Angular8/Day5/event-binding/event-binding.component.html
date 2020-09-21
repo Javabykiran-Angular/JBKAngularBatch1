@@ -1,0 +1,66 @@
+<p>event-binding works!</p>
+
+<!-- <button (click)="onclick()">Click Me</button>
+<br><br>
+<input type="text" [value]="strname">
+
+<h1> {{strname}} </h1>
+
+ $event-It is special variable provided by Angular It gives  the information of your current dom element that information is in the object form 
+
+<button (click)="onclick2($event)" value="Click Me Thank You ">Use of $Event</button >
+
+ template Reference variable 
+<br><br> 
+<input type="text" placeholder="Enter the name" #myinput  >
+<br><br> 
+ <button (click)="onClick3(myinput.value)">Submit</button><br><br>  -->
+
+<button (click)="onClick3(myinput)">Submit</button><br><br> 
+
+<input type="text" placeholder="Resultant Output" [value]="strname2">
+<br><br><br>
+
+<input type="text" placeholder="Enter the Name....." (change)="onChangeEvent()" [style.background]="bgcolor"
+(focus)="onFocus()"
+> 
+
+
+
+<hr>
+
+<button (click)="res=2+2"> Calculate </button>
+{{res}} <br><br>
+
+<button (click)="res1=num1+num2"> Calculate2 </button>
+{{res1}}<br><br>
+
+<input type="number" placeholder="Enter the first number " #input1 > <br>
+<input type="number" placeholder="Enter the Second number " #input2>
+<br><br>
+<button (click)="res3=(+input1.value)+(+input2.value)"> 
+    Calculate3 </button>
+{{res3}}
+
+<!-- key up & key Down event -->
+
+<!-- input,textarea -->
+
+<br><br>
+<input type="text" (keyup)="onKeyUp($event)" ><br><br>
+
+<input type="text" (keydown)="onKeyDown($event)" >
+
+<!-- mouseover event -->
+
+<!-- ngModel- It is used for Two way binding syntax is [()]-banna in the box -->
+<br><br>
+<input type="text" placeholder="Enter the Name" [(ngModel)]="myname" ><br>
+{{myname}}
+
+
+
+
+
+
+
