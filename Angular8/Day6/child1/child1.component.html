@@ -1,0 +1,29 @@
+<p>child1 works!</p>
+
+<h2> {{parentdata}} </h2>
+
+
+
+<h2> Product name::  {{parentdataobj.prodname}} </h2>
+<h2>Quantity::  {{parentdataobj.quantity}} </h2>
+
+<h2> Prize::  {{parentdataobj.prize}} </h2>
+
+<table>
+    <thead>
+        <th>#</th>
+        <th> Product Name </th>
+        <th> Quantity </th>
+        <th> Prize </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of parentdataArrObj;index as i">
+
+            <td> {{i+1}} </td>
+            <td> {{item.prodname}} </td>
+            <td> {{item.quantity}} </td>
+            <td> {{item.prize}} </td>
+
+        </tr>
+    </tbody>
+</table>
