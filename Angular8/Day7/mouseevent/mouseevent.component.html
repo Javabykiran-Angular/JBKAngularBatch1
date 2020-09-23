@@ -1,0 +1,92 @@
+<p>mouseevent works!</p>
+
+<br>
+<table border="2px">
+    <thead>
+        <th> # </th>
+        <th> Product Name </th>
+        <th> Quantity </th>
+        <th> Prize </th>
+        <th> Description </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i"
+        (mouseover)="OnMouseOver(item)" [ngClass]="{
+           'highlight':item.product == selected
+        }"
+        (mouseout)="OnMouseOutEvent()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.product}} </td>
+            <td> {{item.Quantity}} </td>
+            <td> {{item.prize}} </td>
+            <td> {{item.description}} </td>
+        </tr> 
+    </tbody>
+</table>
+<hr>
+
+
+<table border="2px">
+    <thead>
+        <th> # </th>
+        <th> Product Name </th>
+        <th> Quantity </th>
+        <th> Prize </th>
+        <th> Description </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i"
+        (mouseover)="OnMouseOver1(item)" 
+        (mouseout)="OnMouseOutEvent1()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.product}} </td>
+            <td> {{item.Quantity}} </td>
+            <td [ngClass]="{
+                'highlight':item.prize == selected1
+             }"> {{item.prize}} </td>
+            <td> {{item.description}} </td>
+        </tr> 
+    </tbody>
+</table>
+
+<hr>
+
+
+<table border="2px">
+    <thead>
+        <th> # </th>
+        <th> Product Name </th>
+        <th> Quantity </th>
+        <th> Prize </th>
+        <th> Description </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i"
+        
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.product}} </td>
+            <td> {{item.Quantity}} </td>
+            <td > {{item.prize}} </td>
+            <td (mouseover)="OnMouseOver2(item)" 
+            (mouseout)="OnMouseOutEvent2()"
+            [ngClass]="{
+                'highlight':item.description == selected2
+             }"
+            > {{item.description}} </td>
+        </tr> 
+    </tbody>
+</table>
+<br><br>
+
+<div class="divclass">
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+

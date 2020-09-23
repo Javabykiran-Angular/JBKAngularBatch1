@@ -1,0 +1,11 @@
+
+.highlight{
+    background: #4CAF50;
+    color: #ffffff;
+}
+
+.divclass{
+    background-image: url("../../assets/Desert.jpg");
+    height: 400px;
+    width: 400px;
+}
