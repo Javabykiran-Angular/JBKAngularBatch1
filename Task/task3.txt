@@ -1,0 +1,15 @@
+1 Using two way binding , web page contain two input text & one button. One input text is used to take input from user another input text is used to display output. Find Number is prime number or not click on button.
+e.g input =3 (From 1st input text)
+       output= Number is prime number (on 2nd input text display this string)
+
+2 Validate the Log in page  using two way binding & display alert message "Validated successfully!!!! "
+
+3  Check given number is even or odd using ngIf directive
+
+4 Change the width of input box when user enter the number in input box (Ask in interview )
+
+5 Set image to div and on mouse hover change the transparency/opacity of the image
+Hint use opacity css property & also use mouseout event & mouseover
+
+6 WAP to send rating(as number) from parent component to child component. In child component check whether rating is less than 6 then apply background color to div as 'red' else apply 'green' color
+

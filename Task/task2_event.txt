@@ -1,0 +1,9 @@
+1 On click event Change Background color, text color of div tag text 
+
+2 Find square & cube of number on click event use as radio button. Take number as hard coded for time being & display the result in another text box, square & cube respectively.
+
+3 Apply Class Binding to button, when button on click  to change text style to italic & text color should be change
+
+4 Set image to div on click on button
+
+5 Create web page containing  Employee having fields id,name,salary & two buttons name viz add & remove button. When we Click add button dynamic value is added also remove the particular data if click on remove button.

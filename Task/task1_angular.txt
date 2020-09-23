@@ -1,0 +1,5 @@
+1 Design web page such as page has one input text & one button, on button click display the the message in text box "Welcome JavaByKiran" Use Event binding & (String interpolation or Property Binding)
+
+2 Design web page such as page has one input text & one button, initially text box display "Hi". After on button click display the the message in text box "Hi Welcome Java By Kiran" Use Event binding & (String interpolation or Property Binding).On Multiple button click "Hi Welcome Java By Kiran " this text Should not get append in text box every time
+
+3 Design Log in page  on first submit page should display success message in alert "Submitted successfully " and from second click onwards it should alert "Your data is already submitted"
