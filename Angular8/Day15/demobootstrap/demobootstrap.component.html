@@ -1,0 +1,63 @@
+<p>demobootstrap works!</p>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-xl-12">
+        <table class="table table-bordered table-dark table-hover">
+            <thead>
+                <th>ID</th>
+                <th>Fname</th>
+                <th>Lname</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of arrobj">
+                    <td> {{item.id}} </td>
+                    <td> {{item.fname}} </td>
+                    <td> {{item.lname}} </td>
+                    <td><button class="btn btn-outline-success">Update</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<!-- end first row div -->
+
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-xl-6">
+        <table class="table table-bordered table-dark table-hover">
+            <thead>
+                <th>ID</th>
+                <th>Fname</th>
+                <th>Lname</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of arrobj">
+                    <td> {{item.id}} </td>
+                    <td> {{item.fname}} </td>
+                    <td> {{item.lname}} </td>
+                    <td><button class="btn btn-outline-success">Update</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-6 col-md-6 col-xl-6">
+        <div class="form-group">
+            <label for="">Username:</label>
+            <input type="text" class="form-control" placeholder="Enter the Username">
+        </div>
+        <div class="form-group">
+            <label for="">Password:</label>
+            <input type="text" class="form-control" placeholder="Enter the Password">
+        </div>
+        <button class="btn btn-success">Submit</button>
+    </div>
+</div>
+
+
+
+
+</div>
+
