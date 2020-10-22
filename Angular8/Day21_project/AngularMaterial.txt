@@ -1,0 +1,48 @@
+install Angular Material + angular CDK
+Step 1 
+npm install  --save @angular/material@8.2.3 @angular/cdk@8.2.3
+
+To angular animation , we have to install angular animation module
+npm install --save @angular/animations
+
+Step 2 import BrowserAnimationsModule in app.module.ts file
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+step 3 For better Approach create your own module
+ng g m shared/material --flat
+
+step 4 use  exports:[] instead of declaration key
+first it is import  from angular material (required import key i.e. imports:[CommonModule,]) & then you can export it so you can use it in your project
+
+step 5 
+apply in build theme in  global style sheet style.css nodemodules/@angular/material/prebuiltsthemes 
+
+@import ‘~@angular/material/prebuilt-themes/indigo-pink.css’
+
+step 6 create component whose name is mat-confirm-dialog 
+ng g c mat-confirm-dialog
+
+step 7 create confirm dialog service for generalization purpose
+ng g s dialog
+
+step 8 import MatDialogModule in our created module class in import & export Section
+
+step 9 Also import mat-confirm-dialog component in entryComponents in app.module.ts
+entryComponents->
+This is for dynamically added components that are added.It tells the offline template compiler to compile them and create factories for them.If you don't list a dynamically added component to entryComponents you'll get an error message a  missing factory because Angular won't have created one.
+
+Step 10 Go to service And Add matdialog dependency so we can dynamically open & close the dialog.
+
+Step 11 Import & export MatIconModule in customize module
+
+Step 12 Also for material icon visible. There are two ways to implement
+	1 link google font into index.html for online use below link
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	2 If you want to use offline follow the below
+		- npm install this: npm install material-design-icons
+		- add the styles to angular.json:
+		   "styles": [
+				"node_modules/material-design-icons/iconfont/material-icons.css"
+			]
+	
+
