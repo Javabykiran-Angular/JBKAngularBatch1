@@ -1,0 +1,100 @@
+
+
+<div class="container-fluid">
+     <!-- Navigation -->
+     <!-- <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+        
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <a class="navbar-brand" style="color: white;" >Employee Mangement System</a>
+        
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+            <div class="navbar-nav ml-auto">
+                <span class="nav-item nav-link" style="font-weight: bold;color: whitesmoke;" >Hi Welcome {{username}} </span>&nbsp;
+                <a (click)="onLogout()" style="cursor: pointer;font-weight: bold;color: whitesmoke;" class="nav-item nav-link" >LogOut</a>
+            </div>
+        </div>
+    </nav>    
+</div>
+</div> -->
+    
+    <app-header></app-header>
+<hr/>
+    <div style=" position: sticky;top: 0; position: -webkit-sticky; ">
+        <!-- -webkit-sticky Safari  -->
+        <button class="btnclass btn btn-success" (click)="onAddEmpolyee()" >Add Employee</button>
+        <button class="btnclass btn btn-warning" (click)="onUpdate()">Update Employee</button>
+        <button class="btnclass btn btn-danger" (click)="onDelete()">Delete Employee</button>
+        <button class="btnclass btn btn-warning" (click)="onSuspend()">Suspended </button>
+        
+        <div class="form-group" style="float: right;">
+            <div class="input-group-prepend">
+            <span class="input-group-text" style="font-size: 1em; "><i class="fa fa-search"></i></span><input type="text" class="form-control" placeholder="Search" style="width: min-content;" [(ngModel)]="nameSearch">
+        </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="tableFixHead">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <th>#</th>
+                        <th>Employee Id</th>
+                        <th>Employee Name</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                        <th>Phone No.</th>
+                        <th>Country</th>
+                        <th>Creatated Date</th>
+                        <th>Creatated By</th>
+                        <th>Updatated Date</th>
+                        <th>Updatated By</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <!-- <tr *ngFor="let item of EmpData;index as i"> -->
+                            <tr *ngFor="let item of tempEmpdata |filter:nameSearch;index as i">
+                            <td> {{i+1}} </td>
+                            <td> {{item.id}} </td>
+                            <td> {{item.name}} </td>
+                            <td> {{item.departmentit}} </td>
+                            <td > <h5>
+                                <span 
+                                [ngClass]="{ 'badge':true,'badge-success':item.status=='Active','badge-warning':item.status=='InActive',
+                                'badge-danger':item.status=='Suspend'
+                             }"
+                                >{{item.status}}</span>
+                            </h5>  </td>
+                            <td> {{item.phoneno}} </td>
+                            <td> {{item.country.cname}} </td>
+                            <td> {{item.createddtm}} </td>
+                            <td> {{item.createdby}} </td>
+                            <td> {{item.updateddtm}} </td>
+                            <td> {{item.updatedby}} </td>
+                            <td> <input type="radio" name="data" (click)="onRadioClick(item)" > </td>
+                            
+                        </tr>
+                        <!-- <tr>
+                            <td> <input type="radio" name="data" (click)="onRadioClick('gh')" > </td>
+                            
+                        </tr> -->
+        
+                    </tbody>
+
+                </table>
+
+            </div>
+            <!-- tableFixHead div is closed here -->
+
+        </div>
+
+    </div>
+    <!-- First Row Close -->
+
+</div>
+
+
