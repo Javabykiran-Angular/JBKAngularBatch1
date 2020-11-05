@@ -1,0 +1,8 @@
+.textLable{
+    color: whitesmoke;
+}
+
+input.ng-touched.ng-invalid{
+    border: 2px solid red;
+    box-shadow: 0 0 13px inset rgba(247, 245, 245, 0.2);
+}
